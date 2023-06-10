@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: white;
+  font-family: "Karla", sans-serif;
+  line-height: 1;
+}
+
+.container {
+  padding: 0 35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.box-container {
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: hsla(217, 22%, 67%, 0.3) 0px 19px 38px,
+    hsla(217, 22%, 67%, 0.3) 0px 15px 12px;
+}
+
+.heading-box {
+  border-radius: 5px;
+  padding: 4rem 4rem;
+}
+
+.heading {
+  font-size: 2.6rem;
+  color: hsl(179, 62%, 43%);
+}
+
+.heading-info {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: hsl(71, 73%, 54%);
+  padding: 2rem 0 1rem 0;
+}
+
+.heading-text {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: hsl(218, 22%, 67%);
+  padding-right: 5rem;
+}
+
+.subscription-box {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.Subscription-info {
+  padding: 3rem 4rem 1.5rem 4rem;
+  font-size: 1.8rem;
+}
+
+.main-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.price {
+  font-size: 1.4rem;
+  color: hsl(204, 43%, 93%);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 4rem;
+}
+
+.price span {
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+}
+
+.price-info {
+  font-size: 1.6rem;
+  color: hsl(204, 43%, 93%);
+  padding: 1rem 4rem;
+}
+
+.price-btn {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: "Karla";
+  cursor: pointer;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 1.5rem 4rem 3rem 4rem;
+  padding: 1.5rem 9rem;
+}
+
+.price-btn:hover {
+  padding: 1.8rem 9.5rem;
+}
+
+.why-box {
+  background-color: hsla(179, 62%, 43%, 0.8);
+  padding: 3rem 4rem;
+}
+
+.tutorial {
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+}
+
+.tutorial-info {
+  font-size: 1.4rem;
+  color: hsl(204, 43%, 93%);
+  line-height: 1.3;
+}
+
+@media (max-width: 375px) {
+  .container {
+    height: auto;
+    padding: 6rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .heading-box {
+    padding: 3.5rem;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+  }
+
+  .heading-info {
+    font-size: 1.6rem;
+    line-height: 1.5;
+  }
+
+  .heading-text {
+    font-size: 1.4rem;
+    padding: 1rem 0;
+  }
+
+  .main-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Subscription-info,
+  .span,
+  .price,
+  .price-info {
+    padding: 3rem 3.5rem 0;
+  }
+
+  .price-btn {
+    margin: 2rem 3.5rem;
+    padding: 1.5rem 10rem;
+  }
+
+  .why-box {
+    padding: 3rem 3.5rem;
+  }
+}
